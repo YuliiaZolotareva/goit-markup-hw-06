@@ -501,6 +501,19 @@ screen and (min-device-pixel-ratio:2) {
             url(../images/retina.css/hero-mobil-image@2x.jpg);
     }
 }
+@media screen and (min-width:768px){
+    .hero{
+        background-image:url(../images/retina.css/hero-tablet-image.jpg);
+    }
+}
+@media screen and (min-resolution:192dpi) and (min-width:768px),
+screen and (min-resolution:2dppx),
+screen and (min-device-pixel-ratio:2) {
+    .hero{
+        background-image: 
+            url(../images/retina.css/hero-tablet-image@2x.jpg);
+    }
+}
 .hero-container{
     flex-direction: column;
     max-width: 320px;
@@ -524,6 +537,7 @@ screen and (min-device-pixel-ratio:2) {
     letter-spacing: -0.02em;
     text-transform: capitalize;
     color: var(--WHITE, #FFF);
+
 }
 .button-main {
  line-height: 1.5;
