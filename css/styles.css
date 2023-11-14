@@ -30,8 +30,7 @@ body {
 
 }
 .section-padding{
-    padding-top:120px ;
-    padding-bottom: 120px;
+    padding:96px 0 ;
 }
 .visually-hidden {
     position: absolute;
@@ -63,6 +62,9 @@ body {
 .contacts-lict{
     display: none;
 }
+.contacts-nav{
+    display: none;
+}
 .logo-span {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -79,6 +81,9 @@ body {
     text-transform: uppercase;
     color:#4d5ae5;
     margin-right: 76px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    display: block;
     }
     .mobile-open-btn{
         background-color: transparent;
@@ -93,10 +98,7 @@ body {
         align-items: center;
         justify-content: space-between;
     }
-    .main-header{
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
+    
     .mobile-menu{
         position: fixed;
         top: 0;
@@ -473,7 +475,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
     margin-left: auto;
     margin-right: auto;
 }
-/*----------------/HERO MOBILE STYLES----------------*/
+/*----------------HERO MOBILE STYLES----------------*/
 
 .hero {
     background:  #2E2F42;
@@ -528,18 +530,17 @@ screen and (min-device-pixel-ratio:2) {
     
    
 }
- .main-title{
-        max-width: 288px;
-        margin-bottom: 72px;
-        margin-top: 72px;
-    }
+
     
 
 .main-title {
-    text-align: center;
+    max-width: 160px;
+        margin-bottom: 72px;
+        margin-left: auto;
+        margin-right: auto;
     font-family: Roboto;
     font-size: 36px;
-    line-height: 1,2;
+    line-height: 1.2;
     letter-spacing: -0.02em;
     text-transform: capitalize;
     color: var(--WHITE, #FFF);
@@ -613,6 +614,7 @@ margin-bottom: 72px;
     display: flex;
     flex-direction: column;
     row-gap: 72px;
+    align-items: center;
 }
 .team-list {
     background-color: #FFFFFF;
@@ -743,7 +745,7 @@ background-color: #404bbf;
         padding-bottom: 0px;
         flex-direction: column;
         align-items: flex-start;
-        gap: 32px;
+        gap: 48px;
         
        
     }
@@ -769,6 +771,9 @@ gap: 32px;
         border-top: none;
     }
 /*----------------/PORTFOLIO MOBILE STYLES----------------*/
+/*----------------FOOTER MOBILE STYLES----------------*/
+
+/*----------------/FOOTER MOBILE STYLES----------------*/
 
 @media screen and (min-width: 320px){
     .container{
@@ -780,13 +785,19 @@ gap: 32px;
 }
 @media screen and (min-width: 768px){
     .container{
-        width: 768px;
+        width: 736px;
     }
 
     /*-------------------HEADER TABLET STYLES---------------*/
+    .main-nav{
+        display: flex;
+    }
     .menu{
         display: inline-flex;
         gap: 40px;
+    }
+    .contacts-nav{
+        display: flex;
     }
     .logo{
         margin-right: 120px;
@@ -895,7 +906,7 @@ gap: 32px;
      }
     .hero-container{
         flex-direction: column;
-        max-width: 320px;
+        max-width: 768px;
         background-position: center;
           
     }
@@ -910,9 +921,44 @@ gap: 32px;
         line-height: 1,1;
     }
      /*-------------------HERO TABLET STYLES---------------*/
-   
+     /*-------------------benefits TABLET STYLES---------------*/
+     .benefits-list{
+        display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+     flex-wrap: wrap;
+     gap: 8px; 
+     row-gap: 72px; 
+    }
+  
+     .benefits-item{
+        display: flex;
+    flex-wrap: wrap;
+    width: 356px;
+    width: calc((100% - 8px) / 2);
+     }
+     
 
-}
+     /*-------------------benefits TABLET STYLES---------------*/
+     /*-------------------Our Team TABLET STYLES---------------*/
+     .team-list{
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 24px; 
+        row-gap: 64px; 
+        justify-content: center;
+     }
+     
+     /*-------------------Our Team TABLET STYLES---------------*/
+     /*-------------------Our Portfolio TABLET STYLES---------------*/
+     
+
+
+
+     /*-------------------Our Portfolio TABLET STYLES---------------*/
+
+    }
 @media screen and (min-width: 1158px){
     .container{
         width: 1440px;
