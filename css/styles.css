@@ -1,4 +1,5 @@
 /*----------------COMMON STYLES----------------*/
+
 h1,h2,h3,h4,h5,h6,p{
     margin-top: 0;
     margin-bottom: 0;
@@ -740,7 +741,6 @@ background-color: #404bbf;
     }
     .portfolio-list{
         display: flex;
-        width: 288px;
         padding-bottom: 0px;
         flex-direction: column;
         align-items: flex-start;
@@ -749,8 +749,6 @@ background-color: #404bbf;
        
     }
     .portfolio-item{
-        
-width: 288px;
 padding-bottom: 0px;
 flex-direction: column;
 align-items: flex-start;
@@ -1073,6 +1071,7 @@ margin-bottom: 16px;
         flex-direction: row;
         justify-content: flex-start;
         flex-wrap: wrap;
+        gap: 24px;
      }
      .portfolio-item{
         flex-basis: calc((100% - 94px) / 6);
@@ -1081,6 +1080,25 @@ margin-bottom: 16px;
 
 
      /*-------------------Our Portfolio TABLET STYLES---------------*/
+     /*-------------------FOOTER TABLET STYLES---------------*/
+     .footer-container-all{    
+        flex-wrap: wrap;
+        flex-direction: row;
+    align-items: baseline;
+}
+     .footer-container{
+        display: flex;
+        display: inline-block;
+        max-width: 264px;
+    }
+    .linc-footer{
+        display: flex;
+        display: inline-block;
+        width: 50%;
+    }
+
+     /*-------------------FOOTER TABLET STYLES---------------*/
+
 
     }
 @media screen and (min-width: 1158px){
