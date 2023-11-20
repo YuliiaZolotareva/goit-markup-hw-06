@@ -85,7 +85,9 @@ body {
   margin-right: 76px;
   padding-top: 17px;
   padding-bottom: 17px;
-  display: block;
+  /*display: block;*/
+  display: flex;
+  align-items: center;
 }
 .mobile-open-btn {
   background-color: transparent;
@@ -152,14 +154,18 @@ body {
   margin-bottom: 168px;
 }
 .mobile-menu-list-item {
-  color: var(--NAVY-BLUE, #2e2f42);
-  font-family: Roboto;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.12;
-  letter-spacing: -0.02em;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--NAVY-BLUE, #2e2f42);
+}
+.mobile-menu-list-linc {
+  color: var(--NAVY-BLUE, #2e2f42);
+  width: 24px;
+  height: 24px;
 }
 .mobile-menu-list-linc:hover,
 .mobile-menu-list-linc:active,
@@ -183,6 +189,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.4px;
 }
+
 .mobile-menu-contacts-link:hover,
 .mobile-menu-contacts-link:active,
 .mobile-menu-contacts-link:focus {
@@ -211,8 +218,9 @@ body {
 .mobil-menu-social-list-svg {
   margin: 12px;
   fill: #f4f4fd;
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
+  margin: 8px;
   flex-shrink: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -498,6 +506,7 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-tablet-image.jpg);
+    height: 436px;
   }
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -519,6 +528,7 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-desktop-image.jpg);
+    height: 600px;
   }
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
@@ -661,6 +671,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-bottom: 8px;
 }
 .person-div {
   padding: 32px 0;
@@ -694,7 +705,6 @@ body {
   background-color: #404bbf;
 }
 .social-list-item {
-  padding-top: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*----------------/Team MOBILE STYLES----------------*/
@@ -762,6 +772,7 @@ body {
 }
 /*----------------/PORTFOLIO MOBILE STYLES----------------*/
 /*----------------FOOTER MOBILE STYLES----------------*/
+
 .footer {
   background-color: #2e2f42;
   padding-top: 97.5px;
@@ -788,9 +799,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-bottom: 17.5px;
-  padding-right: 100px;
-  padding-left: 87px;
+  justify-content: center;
 }
 .span-footer {
   color: #f4f4fd;
@@ -803,6 +812,16 @@ body {
   width: 288px;
   margin-bottom: 72px;
 }
+.social-list-svg-footer {
+  width: 24px;
+  height: 24px;
+}
+.social-list-svg-footer {
+  width: 24px;
+  height: 24px;
+  margin: 8px;
+}
+
 .footer-linc-title {
   font-size: 16px;
   font-weight: 500;
@@ -817,7 +836,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 }
 .input-title {
   color: var(--WHITE, #fff);
@@ -981,7 +1000,7 @@ input-footer::placeholder {
     display: flex;
     align-items: center;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+      0px 1px 1px rgba(46, 47, 66, 0.16);
   }
   .contacts-lict {
     display: flex;
@@ -1123,6 +1142,10 @@ input-footer::placeholder {
     width: 360px;
   }
   /*-------------------HERO LAPTOP STYLES---------------*/
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
 
   /*-------------------HERO LAPTOP STYLES---------------*/
 
@@ -1153,6 +1176,7 @@ input-footer::placeholder {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    font-weight: 400;
   }
   .benefits-list {
     gap: 24px;
@@ -1169,6 +1193,18 @@ input-footer::placeholder {
   /*-------------------TEAM LAPTOP STYLES---------------*/
   .person-div {
     padding: 0%;
+    padding: 32px 0;
+  }
+  .team-person {
+    gap: 0;
+  }
+  .social-list {
+    gap: 24px;
+    padding-bottom: 0;
+  }
+  .social-list-svg {
+    width: 16px;
+    height: 16px;
   }
   /*-------------------TEAM /LAPTOP STYLES---------------*/
 
@@ -1190,5 +1226,13 @@ input-footer::placeholder {
   .label-footer {
     margin-right: 24px;
   }
+  .footer-item {
+    margin-bottom: 0px;
+  }
+  .social-list-svg-footer {
+    width: 24px;
+    height: 24px;
+  }
+
   /*-------------------/FOOTER LAPTOP STYLES---------------*/
 }
